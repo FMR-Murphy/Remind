@@ -10,6 +10,8 @@ import MapKit
 import SnapKit
 
 class AddViewController: UIViewController {
+    
+    let viewModel = TaskViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +20,15 @@ class AddViewController: UIViewController {
         
         createUI()
         bindSignal()
+        startLocation()
     }
     
     private func createUI() {
+        view.backgroundColor = .white
         view.addSubview(mapView)
         mapView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view)
+            make.top.left.right.equalTo(view)
+            make.height.equalTo(400)
         }
     }
     
@@ -31,7 +36,17 @@ class AddViewController: UIViewController {
         
     }
     
-
+    func startLocation() {
+        
+        viewModel.startLocation { [weak self] (coordinate) in
+            if coordinate != nil {
+                let span = MKCoordinateSpan(latitudeDelta: 1.0, longitudeDelta: 1.0)
+                let region = MKCoordinateRegion(center: coordinate!, span: span)
+                self?.mapView.setRegion(region, animated: true)
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

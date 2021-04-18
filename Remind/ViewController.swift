@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     //MARK: lazy
     lazy var addButton: UIBarButtonItem = {
-        let item = UIBarButtonItem(systemItem: .add);
+        let item = UIBarButtonItem(systemItem: .add)
         
         return item
     }()

@@ -1,4 +1,9 @@
 PODS:
+  - BaiduMapKit/Base (6.0.0)
+  - BaiduMapKit/Map (6.0.0):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Search (6.0.0):
+    - BaiduMapKit/Base
   - RxCocoa (6.0.0-rc.2):
     - RxRelay (= 6.0.0-rc.2)
     - RxSwift (= 6.0.0-rc.2)
@@ -8,23 +13,27 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - BaiduMapKit/Map (= 6.0.0)
+  - BaiduMapKit/Search (= 6.0.0)
   - RxCocoa (= 6.0.0-rc.2)
   - RxSwift (= 6.0.0-rc.2)
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - BaiduMapKit
     - RxCocoa
     - RxRelay
     - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
+  BaiduMapKit: e21e4c72533f263aa3c73e3b0ea13b37e7038f62
   RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
   RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
   RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 556979ea2c5d2b27268c5bdf2d4012c9de94ccfb
+PODFILE CHECKSUM: 0d1b50b21940970905e525436b779f6a96975df5
 
 COCOAPODS: 1.10.1
