@@ -1,10 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## BaiduMapKit
-
-Copyright (c) 2015 BaiduLBS
-
 ## RxCocoa
 
 **The MIT License**

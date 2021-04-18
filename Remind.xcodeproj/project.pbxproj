@@ -162,7 +162,6 @@
 				21600525262AF32200B63BB8 /* Resources */,
 				7D18E5319359A6CE6C2C93ED /* [CP] Embed Pods Frameworks */,
 				2160056D262B356500B63BB8 /* Embed App Extensions */,
-				DB4FD3E36C2466665FEA6744 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,23 +255,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Remind/Pods-Remind-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB4FD3E36C2466665FEA6744 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Remind/Pods-Remind-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Remind/Pods-Remind-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Remind/Pods-Remind-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
