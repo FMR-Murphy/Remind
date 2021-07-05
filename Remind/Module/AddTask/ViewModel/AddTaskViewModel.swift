@@ -57,7 +57,6 @@ class TaskViewModel: NSObject, CLLocationManagerDelegate {
     }
     
     
-    
     private func goApplicationSetting() {
         guard let url = URL(string: UIApplication.openSettingsURLString) else {
             return

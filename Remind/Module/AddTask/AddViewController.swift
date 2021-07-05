@@ -6,8 +6,9 @@
 //
 
 import UIKit
-import MapKit
 import SnapKit
+import MapKit
+import WidgetKit
 
 class AddViewController: UIViewController {
     
@@ -40,11 +41,15 @@ class AddViewController: UIViewController {
         
         viewModel.startLocation { [weak self] (coordinate) in
             if coordinate != nil {
-                let span = MKCoordinateSpan(latitudeDelta: 1.0, longitudeDelta: 1.0)
+                let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
                 let region = MKCoordinateRegion(center: coordinate!, span: span)
                 self?.mapView.setRegion(region, animated: true)
             }
         }
+//        WidgetCenter.shared.getCurrentConfigurations { (result) in
+//            print(result)
+//        }
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
     /*

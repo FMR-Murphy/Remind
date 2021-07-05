@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '13.0'
 
 target 'Remind' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -10,7 +10,7 @@ target 'Remind' do
   pod 'RxCocoa', '6.0.0-rc.2'
   pod 'SnapKit'
 
-#   pod 'BaiduMapKit/Map', '6.0.0'    # 集成地图Map包
-#   pod 'BaiduMapKit/Search', '6.0.0' # 集成地图Search包
+#  pod 'BaiduMapKit/Map', '6.0.0'    # 集成地图Map包
+#  pod 'BaiduMapKit/Search', '6.0.0' # 集成地图Search包
 
 end
