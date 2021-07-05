@@ -14,6 +14,10 @@
 		2111B881262C121900E5418E /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2111B87D262C121800E5418E /* widget.intentdefinition */; };
 		2111B882262C121900E5418E /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2111B87D262C121800E5418E /* widget.intentdefinition */; };
 		2111B885262C121900E5418E /* widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2111B877262C121800E5418E /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2127FB27262C240900AACB27 /* RMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111B88C262C166300E5418E /* RMapView.swift */; };
+		2127FB2C262C242A00AACB27 /* RMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111B88C262C166300E5418E /* RMapView.swift */; };
+		2127FBA2262C53B400AACB27 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2127FBA1262C53B400AACB27 /* LocationViewModel.swift */; };
+		2127FBA7262C59FD00AACB27 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2127FBA1262C53B400AACB27 /* LocationViewModel.swift */; };
 		2160052B262AF32200B63BB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160052A262AF32200B63BB8 /* AppDelegate.swift */; };
 		2160052D262AF32200B63BB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160052C262AF32200B63BB8 /* SceneDelegate.swift */; };
 		2160052F262AF32200B63BB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160052E262AF32200B63BB8 /* ViewController.swift */; };
@@ -51,12 +55,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		084276437A05EB447038E3A5 /* Pods-Remind-widgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind-widgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Remind-widgetExtension/Pods-Remind-widgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		13736D8ABBA51C8F95348B80 /* Pods-Remind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind.debug.xcconfig"; path = "Target Support Files/Pods-Remind/Pods-Remind.debug.xcconfig"; sourceTree = "<group>"; };
 		2111B877262C121800E5418E /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2111B87B262C121800E5418E /* widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widget.swift; sourceTree = "<group>"; };
 		2111B87D262C121800E5418E /* widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widget.intentdefinition; sourceTree = "<group>"; };
 		2111B87E262C121900E5418E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2111B880262C121900E5418E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2111B88C262C166300E5418E /* RMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMapView.swift; path = Widget/View/RMapView.swift; sourceTree = SOURCE_ROOT; };
+		2127FBA1262C53B400AACB27 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationViewModel.swift; path = Widget/ViewModel/LocationViewModel.swift; sourceTree = SOURCE_ROOT; };
 		21600527262AF32200B63BB8 /* Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2160052A262AF32200B63BB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2160052C262AF32200B63BB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +77,7 @@
 		2160055A262B356300B63BB8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2160055C262B356300B63BB8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		21A37F51262BEA8D0065A04D /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
+		760F4A8D638325A4005BDDBE /* Pods-Remind-widgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind-widgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Remind-widgetExtension/Pods-Remind-widgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		C2B04B18D458FAF9ECB82F8F /* Pods_Remind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5AD30938B8785E71543E39 /* Pods-Remind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind.release.xcconfig"; path = "Target Support Files/Pods-Remind/Pods-Remind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,11 +107,29 @@
 			isa = PBXGroup;
 			children = (
 				2111B87B262C121800E5418E /* widget.swift */,
+				2127FBA0262C539E00AACB27 /* ViewModel */,
+				2111B88B262C134A00E5418E /* View */,
 				2111B87D262C121800E5418E /* widget.intentdefinition */,
 				2111B87E262C121900E5418E /* Assets.xcassets */,
 				2111B880262C121900E5418E /* Info.plist */,
 			);
 			path = widget;
+			sourceTree = "<group>";
+		};
+		2111B88B262C134A00E5418E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2111B88C262C166300E5418E /* RMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2127FBA0262C539E00AACB27 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2127FBA1262C53B400AACB27 /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2160051E262AF32200B63BB8 = {
@@ -180,6 +206,8 @@
 			children = (
 				13736D8ABBA51C8F95348B80 /* Pods-Remind.debug.xcconfig */,
 				DB5AD30938B8785E71543E39 /* Pods-Remind.release.xcconfig */,
+				084276437A05EB447038E3A5 /* Pods-Remind-widgetExtension.debug.xcconfig */,
+				760F4A8D638325A4005BDDBE /* Pods-Remind-widgetExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -341,6 +369,8 @@
 			files = (
 				2111B881262C121900E5418E /* widget.intentdefinition in Sources */,
 				2111B87C262C121800E5418E /* widget.swift in Sources */,
+				2127FB2C262C242A00AACB27 /* RMapView.swift in Sources */,
+				2127FBA7262C59FD00AACB27 /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +382,10 @@
 				2160052F262AF32200B63BB8 /* ViewController.swift in Sources */,
 				2160052B262AF32200B63BB8 /* AppDelegate.swift in Sources */,
 				21600544262AF3EE00B63BB8 /* AddViewController.swift in Sources */,
+				2127FB27262C240900AACB27 /* RMapView.swift in Sources */,
 				21600552262B03EA00B63BB8 /* RTaskModel.swift in Sources */,
 				2111B882262C121900E5418E /* widget.intentdefinition in Sources */,
+				2127FBA2262C53B400AACB27 /* LocationViewModel.swift in Sources */,
 				2160052D262AF32200B63BB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

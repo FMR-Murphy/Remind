@@ -9,6 +9,8 @@ import WidgetKit
 import SwiftUI
 import Intents
 
+
+
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), configuration: ConfigurationIntent())
@@ -25,7 +27,7 @@ struct Provider: IntentTimelineProvider {
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+            let entryDate = Calendar.current.date(byAdding: .minute, value: hourOffset, to: currentDate)!
             let entry = SimpleEntry(date: entryDate, configuration: configuration)
             entries.append(entry)
         }
@@ -42,23 +44,37 @@ struct SimpleEntry: TimelineEntry {
 
 struct widgetEntryView : View {
     var entry: Provider.Entry
-
+    let viewModel = LocationViewModel()
     var body: some View {
-        Text(entry.date, style: .time)
+        VStack{
+            Text(entry.date, style: .time)
+            Text("\(viewModel.getNum())")
+        }
     }
 }
 
 @main
 struct widget: Widget {
-    let kind: String = "widget"
+    private let kind: String = "widget"
 
-    var body: some WidgetConfiguration {
+    public var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             widgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+ 
+
     }
+    
+    init() {
+        WidgetCenter.shared.getCurrentConfigurations { (result) in
+            print(result)
+        }
+    }
+    
+    
+    
 }
 
 struct widget_Previews: PreviewProvider {
